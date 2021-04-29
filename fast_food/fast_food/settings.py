@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0nptp_b$l&r%-+hca3@ip^#=*=chn%9eir3e202@#b#e^4!c-*'
+SECRET_KEY = 'django-insecure-0npytp_b$l&r%-+hca3@ip^#=*=chn%9eir3e202@#b#e^4!c-*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,16 +83,15 @@ WSGI_APPLICATION = 'fast_food.wsgi.application'
 # }
 
 DATABASES = {
-    "default": {
+     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "fast_food",
-        "USER": "postgres",
-        "PASSWORD": "root",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "NAME": 'fast_db',
+        "USER": 'fast_user',
+        "PASSWORD": 'root',
+        "HOST": '127.0.0.1',
+        "PORT": '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -111,6 +110,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = 'user.Users'
 
 
 # Internationalization
