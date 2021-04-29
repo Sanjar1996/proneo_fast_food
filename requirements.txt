@@ -1,9 +1,6 @@
 Django==3.2
 Pillow==8.2.0
-<<<<<<< HEAD
 psycopg2-binary==2.8.6
-=======
->>>>>>> d0e56edbdd609c5aec0243303f6cbba17c4475e4
 python-telegram-bot==13.4.1
 psycopg2-binary==2.8.6
 python-dotenv==0.17.0
