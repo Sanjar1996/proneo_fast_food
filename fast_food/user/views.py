@@ -3,8 +3,10 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models import Users
 from .forms import UsersForm
 
+
 def index(request):
     return HttpResponse('salom')
+
 
 def sign(request):
     form = UsersForm(request.POST or None)
