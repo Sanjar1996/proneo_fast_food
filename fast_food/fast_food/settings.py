@@ -39,9 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # internal
     'catalog',
     'user',
     'tg',
+    'api',
+
+    # external
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -88,8 +94,8 @@ WSGI_APPLICATION = 'fast_food.wsgi.application'
 DATABASES = {
      "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.getenv('DB_NAME', 'fast_db'),
-        "USER": os.getenv('DB_USER', 'fast_user'),
+        "NAME": os.getenv('DB_NAME', 'proneo_db'),
+        "USER": os.getenv('DB_USER', 'postgres'),
         "PASSWORD": os.getenv('DB_PASSWORD', 'root'),
         "HOST": os.getenv('DB_HOST', '127.0.0.1'),
         "PORT": os.getenv('DB_PORT', '5432'),

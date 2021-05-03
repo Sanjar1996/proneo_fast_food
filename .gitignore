@@ -1,19 +1,21 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-/__pycache__/
 *.py[cod]
-*.pyc
 **.pyc
+*.pyc
+
 # C extensions
 *.so
+*.env
 
 # Distribution / packaging
 .Python
 env/
+venv/
+images/
 build/
 develop-eggs/
 dist/
-Scripts/
 downloads/
 eggs/
 .eggs/
@@ -25,12 +27,6 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-.env
-.pybuild
-debian/tmp
-debian/python3-telegram
-debian/python3-telegram-doc
-debian/.debhelper
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -48,12 +44,9 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
-.pytest_cache
-.mypy_cache
 nosetests.xml
 coverage.xml
 *,cover
-.coveralls.yml
 
 # Translations
 *.mo
@@ -67,16 +60,3 @@ docs/_build/
 
 # PyBuilder
 target/
-.idea/
-
-# Sublime Text 2
-*.sublime*
-
-# original files from merges
-*.orig
-
-# Exclude .exrc file for Vim
-.exrc
-
-# virtual env
-venv*
